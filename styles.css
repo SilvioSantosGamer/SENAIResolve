@@ -1,0 +1,37 @@
+h1 {
+    color: blue;
+}
+
+.cor-de-fundo {
+    text-align: center;
+    background-color: brown;
+    height: 500px;
+}
+.color-button{
+    color: aliceblue;
+    background-color: black;
+}
+
+.pt-1 {
+    padding-top: 5px;
+}
+
+.pt-2 {
+    padding-top: 10px;
+}
+
+.pt-3 {
+    padding-top: 15px;
+}
+
+.pt-4 {
+    padding-top: 20px;
+}
+
+.pt-5 {
+    padding-top: 25px;
+}
+.input-text{
+    width: 80%;
+}
+
