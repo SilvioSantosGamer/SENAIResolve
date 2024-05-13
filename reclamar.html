@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,34 +13,40 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+
         header {
             background-color: #e80000;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             background-color: #f62c2c;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
             padding: 0 10px;
         }
+
         section {
             padding: 20px;
         }
+
         footer {
             background-color: #e80000;
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
             bottom: 0;
             width: 100%;
+
         }
+
         form {
             margin: 0 auto;
             width: 80%;
@@ -49,7 +56,10 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        input[type="text"], input[type="password"], textarea {
+
+        input[type="text"],
+        input[type="password"],
+        textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
@@ -57,6 +67,7 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
+
         input[type="submit"] {
             background-color: hsl#e80000;
             color: #fff;
@@ -65,20 +76,59 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
         input[type="submit"]:hover {
             background-color: #e80000;
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>SenaiResolve</h1>
     </header>
-<section>
-        <!-- Conteúdo das páginas será carregado aqui -->
+    <section>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <title>Formulário com Checkmart</title>
+        </head>
+
+        <body>
+            <h1>Para resolver, precisamos de informações!</h1>
+
+            <form>
+                <h2>Qual o motivo de sua vinda?</h2>
+                <p>
+                    <label for="questao1">Qual é a sua reclamação?</label><br>
+                    <input type="text" id="questao1" name="questao1" placeholder="Digite qual a sua reclamação...">
+                </p>
+
+                <h2>Você tem alguma ideia?</h2>
+                <p>
+                    <label for="questao2">Qual é a sua sugestão para resolver seu problema?</label><br>
+                    <input type="text" id="questao2" name="questao2" placeholder="Digite detalhadamente sua sugestão...">
+                </p>
+
+                <h2>Para a sua Privacidade:</h2>
+                <p>
+                    <label for="questao3">Você deseja permanecer anônimo?</label><br>
+                    <input type="radio" id="questao3" name="questao3" value="sim">
+                    <label for="questao3">Sim</label>
+                    <input type="radio" id="questao3" name="questao3" value="não">
+                    <label for="questao3">Não</label>
+                </p>
+
+                <a type="text" value="Enviar" href="obrigadopelaresposta.html">Enviar</a>
+            </form>
+        </body>
+
     </section>
     <footer>
         <p>&copy; 2024 SenaiResolve. Todos os direitos reservados.</p>
     </footer>
+
 </body>
+
 </html>
