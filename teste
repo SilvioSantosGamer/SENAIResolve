@@ -1,0 +1,98 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenaiResolve - Feedback</title>
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #e80000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #e80000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background-color: #e80000;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e00000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SenaiResolve - Feedback</h1>
+    </header>
+    <section>
+        <h2>Comentários</h2>
+        <p>Agradecemos seu interesse em fornecer feedback ao SENAI RESOLVE. Seu feedback é valioso para nos ajudar a melhorar o aplicativo.</p>
+
+        <form>
+            <label for="feedback">Deixe seu comentário:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+
+            <button type="submit">Enviar comentários</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 SenaiResolve. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
