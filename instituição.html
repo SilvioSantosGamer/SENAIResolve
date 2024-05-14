@@ -1,1 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenaiResolve</title>
+    <style>
+        /* Estilos CSS aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #e80000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f62c2c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #e80000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"], input[type="password"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #e80000;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #e80000
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SenaiResolve</h1>
+    </header>
+    <section>
+<html>
+<head>
+  <title>Reclamações</title>
+  <style>
+    .complaints-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
+    .complaint {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .complaint .content {
+      margin-bottom: 10px;
+    }
+
+    .complaint .likes {
+      display: flex;
+      align-items: center;
+    }
+
+    .complaint .likes .like-btn {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .complaint .likes .like-count {
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    // Simulação de reclamações vindas de uma fonte de dados
+    var complaints = [
+      { content: "Algumas mesas estão bambas.", likes: 10 },
+      { content: "O estoque da cantina está muito em falta.", likes: 5 },
+      { content: "Conteúdo demais por parte dos  professores.", likes: 2 },
+    ];
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var complaintsContainer = document.getElementById("complaints-container");
+
+      // Ordenar reclamações em ordem decrescente de likes
+      complaints.sort(function(a, b) {
+        return b.likes - a.likes;
+      });
+
+      // Exibir as reclamações
+      complaints.forEach(function(complaint) {
+        var complaintElement = document.createElement("div");
+        complaintElement.className = "complaint";
+
+        var contentElement = document.createElement("div");
+        contentElement.className = "content";
+        contentElement.textContent = complaint.content;
+
+        var likesElement = document.createElement("div");
+        likesElement.className = "likes";
+
+        var likeBtn = document.createElement("img");
+        likeBtn.className = "like-btn";
+        likeBtn.src = "joia.png";
+        likeBtn.alt = "Joia";
+
+        var likeCountElement = document.createElement("span");
+        likeCountElement.className = "like-count";
+        likeCountElement.textContent = complaint.likes;
+
+        likesElement.appendChild(likeBtn);
+        likesElement.appendChild(likeCountElement);
+
+        complaintElement.appendChild(contentElement);
+        complaintElement.appendChild(likesElement);
+
+        complaintsContainer.appendChild(complaintElement);
+
+        // Adicionar evento de clique na imagem da joia
+        likeBtn.addEventListener("click", function() {
+          complaint.likes++;
+          likeCountElement.textContent = complaint.likes;
+
+          // Reordenar reclamações após o aumento dos likes
+          complaints.sort(function(a, b) {
+            return b.likes - a.likes;
+          });
+
+          // Atualizar a ordem das reclamações na interface
+          complaintsContainer.innerHTML = "";
+          complaints.forEach(function(complaint) {
+            complaintsContainer.appendChild(createComplaintElement(complaint));
+          });
+        });
+      });
+
+      // Função para criar um elemento de reclamação
+      function createComplaintElement(complaint) {
+        var complaintElement = document.createElement("div");
+        complaintElement.className = "complaint";
+
+        var contentElement = document.createElement("div");
+        contentElement.className = "content";
+        contentElement.textContent = complaint.content;
+
+        var likesElement = document.createElement("div");
+        likesElement.className = "likes";
+
+        var likeBtn = document.createElement("img");
+        likeBtn.className = "like-btn";
+        likeBtn.src = "joia.png";
+        likeBtn.alt = "Joia";
+
+        var likeCountElement = document.createElement("span");
+        likeCountElement.className = "like-count";
+        likeCountElement.textContent = complaint.likes;
+
+        likesElement.appendChild(likeBtn);
+        likesElement.appendChild(likeCountElement);
+
+        complaintElement.appendChild(contentElement);
+        complaintElement.appendChild(likesElement);
+
+        return complaintElement;
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="complaints-container" id="complaints-container">
+    <!-- As reclamações serão adicionadas aqui dinamicamente -->
+  </div>
+</body>
+</html>
+    </section>
+    <footer>
+        <p>&copy; 2024 SenaiResolve. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
