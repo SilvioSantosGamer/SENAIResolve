@@ -36,7 +36,6 @@
             color: #fff;
             text-align: center;
             padding: 10px;
-            position: fixed;
             bottom: 0;
             width: 100%;
         }
@@ -74,3 +73,69 @@
     <header>
         <h1>SenaiResolve</h1>
     </header>
+    <section>
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Minhas Reclamações</title>
+            <style>
+                .reclamacao {
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+                .reclamacao.vista {
+                    background-color: #f2f2f2;
+                }
+                .reclamacao.resolvida {
+                    background-color: #d4edda;
+                }
+                .reclamacao.resolvida-com-comentario {
+                    background-color: #e2e6ea;
+                }
+                .reclamacao button {
+                    margin-top: 5px;
+                }
+                .comentario {
+                    display: none;
+                    background-color: #f5f5f5;
+                    padding: 10px;
+                    margin-top: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Minhas Reclamações</h1>
+            <div class="reclamacao vista">
+                <h2>Problema com as mesas</h2>
+                <p>Algumas mesas estão muito bambas.</p>
+                <p>Problema não visto</p>
+            </div>
+            <div class="reclamacao resolvida">
+                <h2>Problema dos produtos da cantina</h2>
+                <p>O estoque da cantina está muito escasso.</p>
+                <p>Resolvido</p>
+            </div>
+            <div class="reclamacao resolvida-com-comentario">
+                <h2>Problema com abelhas na cantina</h2>
+                <p>Tem muitas abelhas na cantina enquanto todos comem.</p>
+                <p>Resolvido com comentário:</p>
+                <div class="comentario">
+                    <p>Trocamos a lata de lixo de metais de local, pois as abelhas procuravam o doce das latas de refrigerante.</p>
+                </div>
+                <button>Ver comentário</button>
+            </div>
+            <script>
+                document.querySelectorAll('.reclamacao.resolvida-com-comentario button').forEach(button => {
+                    button.addEventListener('click', () => {
+                        button.previousElementSibling.style.display = 'block';
+                    });
+                });
+            </script>
+        </body>
+        </html>    </section>
+    <footer>
+        <p>&copy; 2024 SenaiResolve. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
