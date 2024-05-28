@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #fff;
         }
         header {
             background-color: #e80000;
@@ -18,7 +19,7 @@
             text-align: center;
         }
         nav {
-            background-color: #f62c2c;
+            background-color: #fff;
             padding: 10px;
             text-align: center;
         }
@@ -56,69 +57,34 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        input[type="submit"] {
-            background-color: #005b96;
+        input[type="submit"], button[type="submit"] {
+            background-color: #e80000;
             color: #fff;
             border: none;
             padding: 15px 20px;
             border-radius: 4px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
-        input[type="submit"]:hover {
-            background-color: #003366;
+        input[type="submit"]:hover, button[type="submit"]:hover {
+            background-color: #c60000;
         }
     </style>
 </head>
-
 <body>
-
-</body>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sugira uma melhoria - Senai App</title>
-  <link rel="stylesheet" href=" http://portal.mec.gov.br/secretaria-de-regulacao-e-supervisao-da-educacao-superior-seres/30000-uncategorised/32161-legislacao-basica-dos-servicos-nacionais-de-aprendizagem ">
-</head>
-<body>
-  <header>
-    <h1>SenaiResolve</h1>
-    <h2>Sua opinião importa!</h2>
-  </header>
-  <nav>
-    <a href="reclamar.html">Faça uma Reclamação</a>
-    <a href="sugestão.html">Faça uma Sugestão</a>
-    <a href="acompanhamento.html">Acompanhamento</a>
-    <a href="perfil.html">Perfil</a>
-    <a href="instituição.html">Prioridades</a>
-    <a href="feedback.html">Feedback</a>
-
-</nav>
-  <main>
-    <section>
-      <h3>Envie sua sugestão para melhorar o aplicativo</h3>
-      <p>Ajude-nos a deixar o aplicativo SenaiResolve cada vez melhor, enviando sua sugestão.</p>
-      <form action="#">
-        <label for="suggestion">Sugestão:</label>
-        <textarea id="suggestion" name="suggestion" rows="5" placeholder="Descreva sua sugestão"></textarea>
-        <button type="submit"><a href="obrigadopelasugestão.html">Enviar</a></button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p></p>
-  
-</body>
-</html>
-
-<body>
-    
-</h1>
+    <header>
+        <h1>SenaiResolve</h1>
+        <h2>Sua opinião importa!</h2>
     </header>
     <nav>
-       
-    </nav>
-    <section>
-        <!-- Conteúdo das páginas será carregado aqui -->
+
+        <h3>Envie sua sugestão para melhorar o aplicativo</h3>
+        <p>Ajude-nos a deixar o aplicativo SenaiResolve cada vez melhor, enviando sua sugestão.</p>
+        <form action="obrigadopelaresposta.html">
+            <label for="suggestion">Sugestão:</label>
+            <textarea id="suggestion" name="suggestion" rows="5" placeholder="Descreva sua sugestão"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
     <footer>
         <p>&copy; 2024 SenaiResolve. Todos os direitos reservados.</p>
