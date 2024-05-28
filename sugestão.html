@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
+            background-color: #f0f0f0;
         }
         header {
             background-color: #e80000;
@@ -19,7 +19,7 @@
             text-align: center;
         }
         nav {
-            background-color: #fff;
+            background-color: #f62c2c;
             padding: 10px;
             text-align: center;
         }
@@ -57,17 +57,16 @@
             border-radius: 4px;
             box-sizing: border-box;
         }
-        input[type="submit"], button[type="submit"] {
+        input[type="submit"] {
             background-color: #e80000;
             color: #fff;
             border: none;
             padding: 15px 20px;
             border-radius: 4px;
             cursor: pointer;
-            transition: background-color 0.3s;
         }
-        input[type="submit"]:hover, button[type="submit"]:hover {
-            background-color: #c60000;
+        input[type="submit"]:hover {
+            background-color: #e80000;
         }
     </style>
 </head>
@@ -77,13 +76,22 @@
         <h2>Sua opinião importa!</h2>
     </header>
     <nav>
+        <a href="reclamar.html">Faça uma Reclamação</a>
+        <a href="sugestão.html">Faça uma Sugestão</a>
+        <a href="acompanhamento.html">Acompanhamento</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="instituição.html">Prioridades</a>
+        <a href="feedback.html">Feedback</a>
+    
+</nav>
+    <section>
 
         <h3>Envie sua sugestão para melhorar o aplicativo</h3>
         <p>Ajude-nos a deixar o aplicativo SenaiResolve cada vez melhor, enviando sua sugestão.</p>
         <form action="obrigadopelaresposta.html">
             <label for="suggestion">Sugestão:</label>
             <textarea id="suggestion" name="suggestion" rows="5" placeholder="Descreva sua sugestão"></textarea>
-            <button type="submit">Enviar</button>
+            <input type="submit" value="Enviar">
         </form>
     </section>
     <footer>
